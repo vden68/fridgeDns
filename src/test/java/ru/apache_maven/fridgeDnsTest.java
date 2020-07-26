@@ -7,9 +7,9 @@ public class fridgeDnsTest extends TestBase{
 
 	@Test
 	public void test() {
-		openMainPage();
-		openCatalogRefrigeratorsPage();
-		Integer i2 = getFirstPrice();
+		app.openMainPage();
+		app.openCatalogRefrigeratorsPage();
+		Integer i2 = app.getFirstPrice();
 		assert(10000 > i2);
 		try {
 			Thread.sleep(10000);
